@@ -11,7 +11,7 @@ El proyecto está diseñado como una página moderna y responsiva que muestra in
 ## 📋 Características  
 
 - Diseño sencillo y claro, fácil de personalizar.  
-- **Modo oscuro** activable mediante un botón.  
+- **Formulario de contacto** con campos para el mensaje y datos personales.  
 - Sección de **traducción** (cambia idioma entre español e inglés).  
 - Estilo responsivo para adaptarse a distintos tamaños de pantalla.  
 - Organización del proyecto en archivos separados (`index.html`, `style.css`, `script.js`).  
