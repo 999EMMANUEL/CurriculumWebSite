@@ -22,7 +22,7 @@ El proyecto está diseñado como una página moderna y responsiva que muestra in
 CurriculumWebSite/
 │── index.html # Página principal con la estructura del sitio
 │── style.css # Estilos del sitio (colores, fuentes, responsive)
-│── script.js # Funcionalidad de interacción (traducción, modo oscuro)
+│── script.js # Funcionalidad de interacción (traducción, formulario)
 
 ## 🚀 Instalación y uso  
 
