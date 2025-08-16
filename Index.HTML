@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emmanuel Jimenez - Fullstack developer</title>
+    <link rel="stylesheet" href="Style.CSS">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="profile-img"><svg xmlns="http://www.w3.org/2000/svg" width="160" height="160" viewBox="0 0 160 160" fill="none">
+            <rect width="160" height="160" rx="80" fill="#1F2A37"/>
+            <circle cx="80" cy="64" r="28" fill="#7CFFB2"/>
+            <rect x="35" y="104" width="90" height="40" rx="20" fill="#5AA9FF"/>
+        </svg>
+    </div>
+            <h1 class="name">Emmanuel Jimenez J</h1>
+            <p class="title">Desarrollador Fullstack</p>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <span>📧</span>
+                    <p>Email: <a href="mailto:emmanueljj000@gmail.com">emmanueljj000@gmail.com</a></p>
+                </div>
+                <div class="contact-item">
+                    <span>🔗</span>
+                    <a href="https://github.com/999EMMANUEL" target="_blank">GitHub</a>
+                </div>
+                <div class="contact-item">
+                    <span>🙋</span>
+                    <a href="https://www.linkedin.com/in/emmanuel-jim%C3%A9nez-980127280/" target="_blank">LinkedIn</a>
+                </div>
+            </div>
+           <div class="translate-widget">
+                <div class="translate-label">
+                    <span class="globe-icon">🌍</span>
+                    <span>Idioma:</span>
+                </div>
+                <div id="google_translate_element"></div>
+            </div>
+        </header>
+
+        <main class="main-content">
+            <div class="left-column">
+                <section class="section">
+                    <h2 class="section-title">Resumen Profesional</h2>
+                    <p>Desarrollador Fullstack apasionado por crear experiencias web modernas y funcionales. Especializado en JavaScript, HTML5 y CSS3, con enfoque en diseño responsivo y interfaces intuitivas.</p>
+                    <button class="btn" onclick="openModal('aboutModal')">Saber más</button>
+                </section>
+
+                <section class="section">
+                    <h2 class="section-title">Habilidades Técnicas</h2>
+                    <div class="skill-grid">
+                        <div class="skill-item" data-skill="60">
+                            <div class="skill-icon">🌍</div>
+                            <div>HTML5</div>
+                            <div class="progress-bar">
+                                <div class="progress-fill"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-skill="50">
+                            <div class="skill-icon">🎨</div>
+                            <div>CSS3</div>
+                            <div class="progress-bar">
+                                <div class="progress-fill"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-skill="30">
+                            <div class="skill-icon">⚡</div>
+                            <div>JavaScript</div>
+                            <div class="progress-bar">
+                                <div class="progress-fill"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-skill="10">
+                            <div class="skill-icon">📱</div>
+                            <div>Responsive</div>
+                            <div class="progress-bar">
+                                <div class="progress-fill"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-skill="75">
+                            <div class="skill-icon">🪟</div>
+                            <div>.NET</div>
+                            <div class="progress-bar">
+                                <div class="progress-fill"></div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="section">
+                    <h2 class="section-title">Educación</h2>
+                    <div class="timeline-item">
+                        <h3>Titulo Tecnico</h3>
+                        <p><strong>CTP Hojancha</strong> • 2020</p>
+                        <p>Fundamentos de HTML5, CSS y .NET</p>
+                    </div>
+                    <div class="timeline-item">
+                        <h3>Bachillerato Ingeniaria en Sistemas</h3>
+                        <p><strong>Universidad Nacional</strong> • Año</p>
+                        <p>Por completar...</p>
+                    </div>
+                </section>
+            </div>
+
+            <div class="right-column">
+                <section class="section">
+                    <h2 class="section-title">Proyectos Destacados</h2>
+                    
+                    <div class="project-card" onclick="openProjectModal('portfolio')">
+                        <h3 class="project-title">Página Web Personal</h3>
+                        <p>Sitio web sobre un curriculum desarrollado con HTML5, CSS3 y JavaScript. Incluye animaciones y formulario de contacto.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">HTML5</span>
+                            <span class="tech-tag">CSS3</span>
+                            <span class="tech-tag">JavaScript</span>
+                        </div>
+                    </div>
+
+                    <div class="project-card" onclick="openProjectModal('ecommerce')">
+                        <h3 class="project-title">Proyecto Ecommerce</h3>
+                        <p>Aplicación web de comercio electrónico con funcionalidades avanzadas como carrito de compras y pasarela de pago simulada. Implementa lógica compleja con C#.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">C#</span>
+                            <span class="tech-tag">.NET</span>
+                            <span class="tech-tag">SWAGGER</span>
+                            <span class="tech-tag">DOM</span>
+                        </div>
+                    </div>
+
+                    <div class="project-card" onclick="openProjectModal('veterinary')">
+                        <h3 class="project-title">Sistema Clínica Veterinaria</h3>
+                        <p>Sistema de gestión para clínicas veterinarias, incluyendo registro de pacientes, citas y facturación. Desarrollado con C++.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">C++</span>
+                            <span class="tech-tag">Console Application</span>
+                            <span class="tech-tag">Desktop</span>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="section">
+                    <h2 class="section-title">Contacto</h2>
+                    <div class="contact-form-container">
+                        <p>¿Tienes un proyecto en mente? ¡Me encantaría escuchar de ti!</p>
+                        
+                        <form id="contactForm" class="contact-form">
+                            <div class="form-group">
+                                <label for="name">Nombre completo</label>
+                                <input type="text" id="name" name="name" required>
+                                <span class="form-error" id="nameError"></span>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="email">Correo electrónico</label>
+                                <input type="email" id="email" name="email" required>
+                                <span class="form-error" id="emailError"></span>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="subject">Asunto</label>
+                                <select id="subject" name="subject" required>
+                                    <option value="">Selecciona un asunto</option>
+                                    <option value="trabajo">Oportunidad de trabajo</option>
+                                    <option value="proyecto">Proyecto freelance</option>
+                                    <option value="colaboracion">Colaboración</option>
+                                    <option value="consulta">Consulta general</option>
+                                    <option value="otro">Otro</option>
+                                </select>
+                                <span class="form-error" id="subjectError"></span>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="message">Mensaje</label>
+                                <textarea id="message" name="message" rows="4" required placeholder="Cuéntame sobre tu proyecto o consulta..."></textarea>
+                                <span class="form-error" id="messageError"></span>
+                                <span class="char-counter">0/500</span>
+                            </div>
+                            
+                            <button type="submit" class="btn submit-btn">
+                                <span class="btn-text">Enviar mensaje</span>
+                                <span class="btn-loading" style="display: none;">Enviando...</span>
+                            </button>
+                        </form>
+                        
+                        <div id="formMessage" class="form-message" style="display: none;"></div>
+                    </div>
+                </section>
+            </div>
+        </main>
+
+        <section class="full-width-section">
+            <div class="section-content">
+                <h2 class="section-title">Experiencia Profesional</h2>
+                <div class="experience-grid">
+                    <div class="timeline-item">
+                        <h3>Desarrollador Frontend Junior</h3>
+                        <p><strong>Empresa/Proyecto</strong> • 2024 - Presente</p>
+                        <p>Desarrollo y mantenimiento de interfaces web utilizando tecnologías modernas</p>
+                    </div>
+                    <div class="timeline-item">
+                        <h3>Proyectos Freelance</h3>
+                        <p><strong>Independiente</strong> • 2023 - 2024</p>
+                        <p>Creación de sitios web para pequeñas empresas y proyectos personales</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <div id="aboutModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('aboutModal')">&times;</span>
+            <h2>Sobre Mí</h2>
+            <p>Soy un desarrollador apasionado por la tecnología web y el diseño de interfaces. Me motiva crear experiencias digitales que sean tanto funcionales como visualmente atractivas.</p>
+            <p>Mi enfoque se centra en escribir código limpio, semántico y accesible, siempre buscando las mejores prácticas en desarrollo frontend y backends.</p>
+            <p>Estoy en constante aprendizaje y siempre abierto a nuevos desafíos y oportunidades de crecimiento profesional.</p>
+        </div>
+    </div>
+
+    <div id="portfolioModal" class="modal project-modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeProjectModal('portfolioModal')">&times;</span>
+            <div class="project-modal-header">
+                <h2 class="project-modal-title">Página Web Personal</h2>
+                <p class="project-modal-description">Sitio web profesional desarrollado con HTML5, CSS3 y JavaScript. Incluye animaciones, formulario de contacto funcional y diseño responsivo.</p>
+            </div>
+            <div class="project-modal-body">
+                <div class="project-gallery">
+                    <div class="gallery-item" onclick="openLightbox('portfolio', 0)">
+                        <img src="https://i.postimg.cc/SxwGkYxf/Captura-de-pantalla-2025-08-16-014814.png" alt="Página Principal">
+                        <div class="gallery-overlay">
+                            <h4>Página Principal</h4>
+                            <p>Landing page con diseño moderno</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item" onclick="openLightbox('portfolio', 1)">
+                        <img src="https://i.postimg.cc/vZ1vJtbm/Captura-de-pantalla-2025-08-16-014825.png" alt="Sección Proyectos">
+                        <div class="gallery-overlay">
+                            <h4>Sección Proyectos</h4>
+                            <p>Galería interactiva de proyectos</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item" onclick="openLightbox('portfolio', 2)">
+                        <img src="https://i.postimg.cc/QxYbYyLP/Captura-de-pantalla-2025-08-16-014839.png" alt="Formulario de Contacto">
+                        <div class="gallery-overlay">
+                            <h4>Formulario de Contacto</h4>
+                            <p>Sistema de contacto con EmailJS</p>
+                        </div>
+                    </div>
+                    <div class="gallery-item" onclick="openLightbox('portfolio', 3)">
+                        <img src="https://i.postimg.cc/8Pz4HVYM/Captura-de-pantalla-2025-08-16-014953.png" alt="Diseño Responsivo">
+                        <div class="gallery-overlay">
+                            <h4>Diseño Responsivo</h4>
+                            <p>Optimizado para móviles</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-modal-tech">
+                    <span class="tech-tag">HTML5</span>
+                    <span class="tech-tag">CSS3</span>
+                    <span class="tech-tag">JavaScript</span>
+                    <span class="tech-tag">EmailJS</span>
+                    <span class="tech-tag">Responsive Design</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="ecommerceModal" class="modal project-modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeProjectModal('ecommerceModal')">&times;</span>
+            <div class="project-modal-header">
+                <h2 class="project-modal-title">Proyecto Ecommerce</h2>
+                <p class="project-modal-description">Aplicación web de comercio electrónico completa con API REST, panel administrativo y funcionalidades avanzadas desarrollada con .NET Core y C#.</p>
+            </div>
+            <div class="project-modal-body">
+                <div class="project-gallery">
+                        <a href="https://postimg.cc/4nmDcHtx" target="_blank"><img src="https://i.postimg.cc/4nmDcHtx/Captura-de-pantalla-2025-08-15-233701.png" alt="Captura-de-pantalla-2025-08-15-233701"/></a><br/><br/>
+                        <a href="https://postimg.cc/G9VZx3JJ" target="_blank"><img src="https://i.postimg.cc/G9VZx3JJ/Captura-de-pantalla-2025-08-15-233936.png" alt="Captura-de-pantalla-2025-08-15-233936"/></a><br/><br/>
+                        <a href="https://postimg.cc/CB69twy0" target="_blank"><img src="https://i.postimg.cc/CB69twy0/Captura-de-pantalla-2025-08-15-234028.png" alt="Captura-de-pantalla-2025-08-15-234028"/></a><br/><br/>
+                </div>
+                <div class="project-modal-tech">
+                    <span class="tech-tag">C#</span>
+                    <span class="tech-tag">.NET Core</span>
+                    <span class="tech-tag">Entity Framework</span>
+                    <span class="tech-tag">SQL Server</span>
+                    <span class="tech-tag">Swagger</span>
+                    <span class="tech-tag">JWT Auth</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="veterinaryModal" class="modal project-modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeProjectModal('veterinaryModal')">&times;</span>
+            <div class="project-modal-header">
+                <h2 class="project-modal-title">Sistema Clínica Veterinaria</h2>
+                <p class="project-modal-description">Sistema de gestión completo para clínicas veterinarias desarrollado en C++. Incluye registro de pacientes, gestión de citas, historial médico y facturación.</p>
+            </div>
+            <div class="project-modal-body">
+                <div class="project-gallery">
+                    <a href="https://postimg.cc/cKxjLv0Z" target="_blank"><img src="https://i.postimg.cc/cKxjLv0Z/Captura-de-pantalla-2025-08-15-233101.png" alt="Captura-de-pantalla-2025-08-15-233101"/></a><br/><br/>
+                    <a href="https://postimg.cc/4YbqG6CB" target="_blank"><img src="https://i.postimg.cc/4YbqG6CB/Captura-de-pantalla-2025-08-15-233152.png" alt="Captura-de-pantalla-2025-08-15-233152"/></a><br/><br/>
+                    <a href="https://postimg.cc/NKwSZNnK" target="_blank"><img src="https://i.postimg.cc/NKwSZNnK/Captura-de-pantalla-2025-08-15-233358.png" alt="Captura-de-pantalla-2025-08-15-233358"/></a><br/><br/>
+                    <a href="https://postimg.cc/D4JR3RFX" target="_blank"><img src="https://i.postimg.cc/D4JR3RFX/Captura-de-pantalla-2025-08-15-233412.png" alt="Captura-de-pantalla-2025-08-15-233412"/></a><br/><br/>
+                    <a href="https://postimg.cc/QH7v4LfL" target="_blank"><img src="https://i.postimg.cc/QH7v4LfL/Captura-de-pantalla-2025-08-15-233626.png" alt="Captura-de-pantalla-2025-08-15-233626"/></a><br/><br/>
+                    </div>
+                </div>
+                <div class="project-modal-tech">
+                    <span class="tech-tag">C++</span>
+                    <span class="tech-tag">Console Application</span>
+                    <span class="tech-tag">File Management</span>
+                    <span class="tech-tag">Data Structures</span>
+                    <span class="tech-tag">OOP</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="lightbox" class="modal" style="z-index: 2000;">
+        <div class="lightbox-content">
+            <span class="close lightbox-close" onclick="closeLightbox()">&times;</span>
+            <div class="lightbox-nav lightbox-prev" onclick="changeImage(-1)">&#10094;</div>
+            <div class="lightbox-nav lightbox-next" onclick="changeImage(1)">&#10095;</div>
+            <img id="lightboxImage" src="" alt="">
+            <div class="lightbox-info">
+                <h3 id="lightboxTitle"></h3>
+                <p id="lightboxDescription"></p>
+                <span id="lightboxCounter"></span>
+            </div>
+        </div>
+    </div>
+    
+    <footer class="overlayq" id="overlay">
+        <footer>Emmanuel Jimenez Jimenez 2025</footer>
+    </footer>
+    
+    <!-- EmailJS Script -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script>
+        (function() {
+            emailjs.init("eY3OIP4MNRDJVbZxU");
+        })();
+    </script>
+    
+    <!-- SCRIPT PARA GOOGLE TRANSLATE -->
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({
+                pageLanguage: 'es',
+                includedLanguages: 'en,es,fr,de,it,pt,zh,ja,ko,ru,ar',
+                layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
+                autoDisplay: false
+            }, 'google_translate_element');
+        }
+    </script>
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    
+    <script src="script.JS"></script>
+</body>
+</html>
